@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 App(
     appid="vortex_remote",
     name="Vortex TV Remote",
@@ -9,3 +10,19 @@ App(
     fap_category="Infrared",
     fap_icon_assets="",
 )
+=======
+App(
+    appid="vortex_remote",
+    name="Vortex TV Remote",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="vortex_remote_app",
+    requires=["gui", "infrared", "notification"],
+    stack_size=2 * 1024,
+    order=20,
+    fap_category="Infrared",
+    fap_version="1.0",
+    fap_icon="vortex_10px.png",
+    fap_author="briliantu",
+    fap_description="Universal remote for Vortex TVs over infrared (RCA protocol).",
+)
+>>>>>>> b0c89c9 (Fix IR API, correct RCA codes, add icon and README)
